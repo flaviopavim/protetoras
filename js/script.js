@@ -1,14 +1,11 @@
 function adjust() {
-    if ($(window).height() > $('#logo').height()) {
+//    if ($(window).height() > $('#logo').height()) {
         $('#logo').css({
-            marginTop: (
-                    ($(window).height() / 2) -
-                    ($('#logo').height() / 2) - 50
-                    )
+            marginTop: (($(window).height() / 2) - ($('#logo').height() / 2) - 50)
         });
-    } else {
-        $('#logo').css({marginTop: 30});
-    }
+//    } else {
+//        $('#logo').css({marginTop: 30});
+//    }
 }
 
 function map(x, in_min, in_max, out_min, out_max) {
@@ -96,4 +93,37 @@ $(document).mousemove(function (event) {
 $(window).resize(function (event) {
     adjust();
     animate();
+});
+
+function playAudio(str) {
+    var audio = new Audio('audio/'+str+'.mp3');
+    audio.play();
+}
+
+function meow() {
+    playAudio('meow');
+    $('#cat-mouth').css({top:289});
+    $('#cat-noose').css({top:291});
+    setTimeout(function(){
+        $('#cat-mouth').css({top:290});
+        $('#cat-noose').css({top:290});
+    },100);
+}
+
+function bark() {
+    playAudio('bark');
+    $('#dog-mouth-bg').css({top:312});
+    $('#dog-mouth').css({top:292});
+    setTimeout(function(){
+        $('#dog-mouth-bg').css({top:315});
+        $('#dog-mouth').css({top:290});
+    },100);
+}
+
+$(window).click(function(){
+    if (Math.round(Math.random())==0) {
+        meow();
+    } else {
+        bark();
+    }
 });
