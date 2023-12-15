@@ -446,7 +446,6 @@
 #protetoras-s:hover {
     animation: rotateMovement 0.5s infinite; /* Adjust the duration and iteration as needed */
     transform-origin: bottom center; /* Set the transform origin to the bottom center for a more natural rotation effect */
-    Z
 }
 
 #protetoras-p,
@@ -493,4 +492,16 @@
 }
 #protetoras-s {
     left: 370px;
+}
+
+
+
+
+#tres-lagoas {
+    position: absolute;
+    top: 480px;
+    left: 110px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #555;
 }

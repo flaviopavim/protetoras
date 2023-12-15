@@ -1,7 +1,7 @@
 function adjust() {
 //    if ($(window).height() > $('#logo').height()) {
         $('#logo').css({
-            top: (($(window).height() / 2) - ($('#logo').height() / 2) - 50)
+            top: (($(window).height() / 2) - ($('#logo').height() / 2) - 90)
         });
 //        $('#inicio').css({
 //            paddingTop: (($(window).height() / 2) - ($('#logo').height() / 2) - 50)
@@ -130,8 +130,8 @@ function playAudio(str) {
 
 function meow() {
     playAudio('meow');
-    $('#cat-mouth').css({top:289});
-    $('#cat-noose').css({top:291});
+    $('#cat-mouth').css({top:288});
+    $('#cat-noose').css({top:292});
     setTimeout(function(){
         $('#cat-mouth').css({top:290});
         $('#cat-noose').css({top:290});
