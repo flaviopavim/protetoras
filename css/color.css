@@ -1,0 +1,82 @@
+/* 
+    Created on : 28 de out. de 2023, 16:17:14
+    Author     : Flávio Pavim
+*/
+
+.dark {
+    display: none;
+    background-color: #333;
+}
+
+.red {
+    background-color: #da3333;
+    color: #fff;
+}
+
+.orange {
+    background-color: #cc6633;
+    color: #fff;
+}
+
+.yellow {
+    background-color: #da9933;
+    color: #fff;
+}
+
+.amber {
+    background-color: #ffcf22;
+    color: #fff;
+}
+
+.green {
+    background-color: #66aa33;
+    color: #fff;
+}
+
+.blue {
+    background-color: #3333da;
+    color: #fff;
+}
+
+.purple {
+    background-color: #712580;
+    color: #fff;
+}
+
+
+
+
+.background-color-dark {
+    background-color: #333;
+}
+.background-color-red {
+    background-color: #da3333;
+}
+.background-color-orange {
+    background-color: #cc6633;
+}
+.background-color-amber {
+    background-color: #ffcf22;
+}
+/*.background-color-green {
+    background-color: #66aa33;
+    color: #fff;
+}*/
+.background-color-blue {
+    background-color: #3333da;
+    
+}
+.background-color-grey {
+    background-color: #ccc;
+    
+}
+
+.border-bottom-red {
+    border-bottom-color: #da3333;
+}
+.border-bottom-orange {
+    border-bottom-color: #cc6633;
+}
+.border-bottom-amber {
+    border-bottom-color: #ffcf22;
+}

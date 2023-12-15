@@ -22,59 +22,371 @@
         <!--<meta property="article:publisher" content="https://www.facebook.com//" />-->
         <!--<meta property="article:modified_time" content="<?php echo date('Y-m-d'); ?>T<?php echo date('H:i:s'); ?>+00:00" />-->
 
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/responsive.css" rel="stylesheet" type="text/css"/>
+        <link href="css/color.css" rel="stylesheet" type="text/css"/>
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="css/logo.css" rel="stylesheet" type="text/css"/>
+        <link href="css/form.css" rel="stylesheet" type="text/css"/>
+        <link href="css/footer.css" rel="stylesheet" type="text/css"/>
+        <link href="css/default.css" rel="stylesheet" type="text/css"/>
+
     </head>
     <body>
-        <div class="body"></div>
-        <!--        <nav>
-                    <a href="#inicio" class="red">Início</a>
-                    <a href="#quem-somos" class="orange">Quem somos</a>
-                    <a href="#nossos-trabalhos" class="yellow">Nossos trabalhos</a>
-                    <a href="#doacao" class="green">Doação</a>
-                    <a href="#contato" class="blue">Contato</a>
-                </nav>-->
-        <div class="container">
-            <section id="inicio">
+        <nav>
+            <a href="#inicio" class="red">Início</a>
+            <a href="#quem-somos" class="orange">Quem somos</a>
+            <a href="#trabalhos" class="yellow">Trabalhos</a>
+            <a href="#doacao" class="green">Doação</a>
+            <a href="#contato" class="blue">Contato</a>
+        </nav>
+        <section id="inicio">
 
-                <center>
-                    <div id="logo">
+            <div id="logo">
+                
+                <style>
+                    #associacao-a-1,
+                    #associacao-s-1,
+                    #associacao-s-2,
+                    #associacao-o-1,
+                    #associacao-c-1,
+                    #associacao-ced,
+                    #associacao-i,
+                    #associacao-a-2,
+                    #associacao-c-2,
+                    #associacao-a-3,
+                    #associacao-til,
+                    #associacao-o-2 {
+                        position: fixed;
+                        top: 120px;
+                    }
+                    #associacao-a-1 {
+                        left: 110px;
+                    }
+                    #associacao-s-1 {
+                        left: 135px;
+                    }
+                    #associacao-s-2 {
+                        left: 150px;
+                    }
+                    #associacao-o-1 {
+                        left: 165px;
+                    }
+                    #associacao-c-1 {
+                        left: 190px;
+                    }
+                    #associacao-i {
+                        left: 210px;
+                    }
+                    #associacao-a-2 {
+                        left: 235px;
+                    }
+                    #associacao-c-2 {
+                        left: 260px;
+                    }
+                    #associacao-ced {
+                        top: 172px;
+                        left: 267px;
+                    }
+                    #associacao-a-3 {
+                        left: 280px;
+                    }
+                    #associacao-til {
+                        top: 110px;
+                        left: 280px;
+                    }
+                    #associacao-o-2 {
+                        left: 300px;
+                    }
+                    
+                    #protetoras-p,
+                    #protetoras-r-1,
+                    #protetoras-o-1,
+                    #protetoras-t-1,
+                    #protetoras-e,
+                    #protetoras-t-2,
+                    #protetoras-o-2,
+                    #protetoras-r-2,
+                    #protetoras-a,
+                    #protetoras-s {
+                        position: fixed;
+                        top: 365px;
+                        top: 370px;
+                    }
+                    #protetoras-p {
+                        top: 365px;
+                        left: 30px;
+                    }
+                    #protetoras-r-1 {
+                        left: 65px;
+                    }
+                    #protetoras-o-1 {
+                        left: 100px;
+                    }
+                    #protetoras-t-1 {
+                        left: 135px;
+                    }
+                    #protetoras-e {
+                        left: 178px;
+                    }
+                    #protetoras-t-2 {
+                        left: 210px;
+                    }
+                    #protetoras-o-2 {
+                        left: 250px;
+                    }
+                    #protetoras-r-2 {
+                        left: 300px;
+                    }
+                    #protetoras-a {
+                        left: 332px;
+                    }
+                    #protetoras-s {
+                        left: 370px;
+                    }
+                    
+                    
+                </style>
+                
+                
 
-                        <img id="rainbow" src="img/bitmap_g48.png" alt=""/>
+                <img id="rainbow" src="img/bitmap_g48.png" alt=""/>
 
-                        <img id="bone" src="img/bitmap_path47.png" alt=""/>
+                <img id="bone" src="img/bitmap_path47.png" alt=""/>
 
-                        <img id="cat-head" src="img/bitmap_path30.png" alt=""/>
-                        <img id="cat-ear-left" src="img/bitmap_path31.png" alt=""/>
-                        <img id="cat-ear-right" src="img/bitmap_path32.png" alt=""/>
-                        <img id="cat-eye-left" src="img/bitmap_path37.png" alt=""/>
-                        <img id="cat-eye-right" src="img/bitmap_path37.png" alt=""/>
-                        <img id="cat-mouth" src="img/bitmap_path35.png" alt=""/>
-                        <img id="cat-noose" src="img/bitmap_path36.png" alt=""/>
+                <img id="cat-head" src="img/bitmap_path30.png" alt=""/>
+                <img id="cat-ear-left" src="img/bitmap_path31.png" alt=""/>
+                <img id="cat-ear-right" src="img/bitmap_path32.png" alt=""/>
+                <img id="cat-eye-left" src="img/bitmap_path37.png" alt=""/>
+                <img id="cat-eye-right" src="img/bitmap_path37.png" alt=""/>
+                <img id="cat-mouth" src="img/bitmap_path35.png" alt=""/>
+                <img id="cat-noose" src="img/bitmap_path36.png" alt=""/>
 
-                        <img id="cat-mustache-left-1" src="img/bitmap_rect41.png" alt=""/>
-                        <img id="cat-mustache-left-2" src="img/bitmap_rect40.png" alt=""/>
-                        <img id="cat-mustache-left-3" src="img/bitmap_rect39.png" alt=""/>
-                        <img id="cat-mustache-right-1" src="img/bitmap_rect44.png" alt=""/>
-                        <img id="cat-mustache-right-2" src="img/bitmap_rect43.png" alt=""/>
-                        <img id="cat-mustache-right-3" src="img/bitmap_rect42.png" alt=""/>
+                <img id="cat-mustache-left-1" src="img/bitmap_rect41.png" alt=""/>
+                <img id="cat-mustache-left-2" src="img/bitmap_rect40.png" alt=""/>
+                <img id="cat-mustache-left-3" src="img/bitmap_rect39.png" alt=""/>
+                <img id="cat-mustache-right-1" src="img/bitmap_rect44.png" alt=""/>
+                <img id="cat-mustache-right-2" src="img/bitmap_rect43.png" alt=""/>
+                <img id="cat-mustache-right-3" src="img/bitmap_rect42.png" alt=""/>
 
-                        <img id="dog-head" src="img/bitmap_ellipse30.png" alt=""/>
-                        <img id="dog-eye-left" src="img/bitmap_path37.png" alt=""/>
-                        <img id="dog-eye-right" src="img/bitmap_path37.png" alt=""/>
-                        <img id="dog-mouth-bg" src="img/bitmap_path46.png" alt=""/>
-                        <img id="dog-mouth" src="img/bitmap_path44.png" alt=""/>
-                        <img id="dog-noose" src="img/bitmap_path45.png" alt=""/>
-                        <img id="dog-ear-left" src="img/bitmap_path33.png" alt=""/>
-                        <img id="dog-ear-right" src="img/bitmap_path34.png" alt=""/>
+                <img id="dog-head" src="img/bitmap_ellipse30.png" alt=""/>
+                <img id="dog-eye-left" src="img/bitmap_path37.png" alt=""/>
+                <img id="dog-eye-right" src="img/bitmap_path37.png" alt=""/>
+                <img id="dog-mouth-bg" src="img/bitmap_path46.png" alt=""/>
+                <img id="dog-mouth" src="img/bitmap_path44.png" alt=""/>
+                <img id="dog-noose" src="img/bitmap_path45.png" alt=""/>
+                <img id="dog-ear-left" src="img/bitmap_path33.png" alt=""/>
+                <img id="dog-ear-right" src="img/bitmap_path34.png" alt=""/>
+                
+                
+                <img id="associacao-a-1" src="img/texto/arte_path17.png" alt=""/>
+                <img id="associacao-s-1" src="img/texto/arte_path19.png" alt=""/>
+                <img id="associacao-s-2" src="img/texto/arte_path19.png" alt=""/>
+                <img id="associacao-o-1" src="img/texto/arte_path21.png" alt=""/>
+                <img id="associacao-c-1" src="img/texto/arte_path50.png" alt=""/>
+                <img id="associacao-ced" src="img/texto/arte_path53.png" alt=""/>
+                <img id="associacao-i" src="img/texto/arte_path48.png" alt=""/>
+                <img id="associacao-a-2" src="img/texto/arte_path17.png" alt=""/>
+                <img id="associacao-c-2" src="img/texto/arte_path50.png" alt=""/>
+                <img id="associacao-a-3" src="img/texto/arte_path17.png" alt=""/>
+                <img id="associacao-til" src="img/texto/arte_path52.png" alt=""/>
+                <img id="associacao-o-2" src="img/texto/arte_path21.png" alt=""/>
+                
+                <img id="protetoras-p" src="img/texto/arte_path54.png" alt=""/>
+                <img id="protetoras-r-1" src="img/texto/arte_path55.png" alt=""/>
+                <img id="protetoras-o-1" src="img/texto/arte_path57.png" alt=""/>
+                <img id="protetoras-t-1" src="img/texto/arte_path59.png" alt=""/>
+                <img id="protetoras-e" src="img/texto/arte_path61.png" alt=""/>
+                <img id="protetoras-t-2" src="img/texto/arte_path59.png" alt=""/>
+                <img id="protetoras-o-2" src="img/texto/arte_path57.png" alt=""/>
+                <img id="protetoras-r-2" src="img/texto/arte_path55.png" alt=""/>
+                <img id="protetoras-a" src="img/texto/arte_path62.png" alt=""/>
+                <img id="protetoras-s" src="img/texto/arte_path64.png" alt=""/>
 
-                        <h1 id="soon">Em breve!!</h1>
+                <!--<h1 id="soon">Em breve!!</h1>-->
 
+            </div>
+        </section>
+        <section id="quem-somos">
+            <div class="container">
+                <h1>Protetoras TL</h1>
+
+                A ASSOCIAÇÃO PROTETORAS TRÊS LAGOAS- APTL é uma entidade filantrópica que é mantida exclusivamente por doações, eventos e promoções realizadas pela entidade, não recebe verba pública e atua ativamente no atendimento veterinário, tratamento e recuperação de animais em situação de abandono e maus tratos resgatados e acolhidos pela população.
+            </div>
+        </section>
+        <section id="trabalhos">
+            <div class="container">
+                <h1>Nossos trabalhos</h1>
+                <div class="row">
+                    <div class="col-md-4 trabalho">
+                        <div id="image-1" class="img"></div>
+                        <!--<img width="100%" src="img/doctor-pets.jpg" alt=""/>-->
+
+                        <div class="pad-30">
+                            <center>
+                                <h2>Adoção</h2>
+
+                                <p>Adotar é a parte mais importante de todo nosso trabalho.</p>
+                                <p>Ao adotar, você estará salvando uma vida indefesa</p>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="col-md-4 trabalho">
+                        <div id="image-2" class="img"></div>
+                        <!--<img width="100%" src="img/doctor-dog.jpg" alt=""/>-->
+                        <div class="pad-30">
+                            <center>
+                                <h2>Resgate</h2>
+
+                                <p>Quando está em nosso alcance, voluntários se dispõem pra resgatar e cuidar </p>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="col-md-4 trabalho">
+                        <div id="image-3" class="img"></div>
+                        <!--<img width="100%" src="img/doctor-cat.png" alt=""/>-->
+                        <div class="pad-30">
+                            <center>
+                                <h2>Medicação</h2>
+
+                                <p>Temos veterinários voluntários para atenderem quando possível</p>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="doacao">
+            <div class="container">
+                <h1>Doação</h1>
+
+                <!--<div class="div-2">-->
+                <p>Somos uma organização sem fins lucrativos. </p>
+                <p>Toda doação recebida é direcionada aos serviços de caridade com nossos bichinhos.</p>
+                <p>Sua cooperação é muito importante!</p>
+                <p>Você pode fazer doação de qualquer valor ou ajudar de alguma forma.</p>
+                <!--                    </div>
+                                    <div class="div-2 pad-30">-->
+
+
+                <form action="" method="post">
+                    <input type="hidden" name="form-contact" value="<?php echo $_SESSION['form-contact']=md5(time().rand(0,9).rand(0,9).rand(0,9).rand(0,9)); ?>">
+                    <input type="text" name="nome" value="" placeholder="Digite seu nome se quiser se identificar">
+                    <select>
+                        <option>Selecione um tipo de doação</option>
+                        <option>PIX</option>
+                        <option>Depósito</option>
+                    </select>
+                    <input id="donation" type="text" name="donation" value="" placeholder="Valor da doação ex: R$ 50,00">
+                    <button id="donate-button" class="green">Doar</button>
+                </form>
+
+            </div>
+        </section>
+        <section id="contato">
+            <div class="container">
+                <h1>Contato</h1>
+                <!--<div class="pad-50">-->
+                <!--<div class="div-2">-->
+                <!--<div class="bg-white">-->
+                <!--<div class="pad-30">-->
+
+                <p>Entre em contato com nossa equipe.</p>
+                <p>Deixe sua sugestão, busque por adoções, ou faça sua doação.</p>
+                <p>Sua interação é muito importante pra nós.</p>
+
+
+                <!--<br>-->
+                <!--<br>-->
+                <!--<center>-->
+                <!--</center>-->
+
+                <!--</div>-->
+                <!--</div>-->
+                <!--                    </div>
+                                    </div>
+                                    <div class="div-2">-->
+                <!--<div class="bg-white">-->
+                <!--<div style="padding: 0 50px;">-->
+
+                <form action="" method="post">
+                    <input type="hidden" name="form-contact" value="<?php echo $_SESSION['form-contact']=md5(time().rand(0,9).rand(0,9).rand(0,9).rand(0,9)); ?>">
+                    <select>
+                        <option>Selecione um assunto</option>
+                        <option>Quero adotar</option>
+                        <option>Quero ajudar</option>
+                        <option>Doação</option>
+                        <option>Sugestões</option>
+                        <option>Denúncia</option>
+                        <option>Outro</option>
+                    </select>
+                    <input type="text" name="nome" value="" placeholder="Digite seu nome">
+                    <input type="email" name="email" value="" placeholder="Digite seu email, whatsapp ou contato">
+                    <textarea placeholder="Digite sua mensagem"></textarea>
+                    <button class="green">Enviar mensagem</button>
+                </form>
+            </div>
+        </section>
+        <footer>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+
+                        <div class="footer-title">Nosso site</div>
+                        <a class="footer-link" href="#inicio">Início</a>
+                        <a class="footer-link" href="#quem-somos">Quem somos</a>
+                        <a class="footer-link" href="#nossos-trabalhos">Nossos trabalhos</a>
+                        <a class="footer-link" href="#doacao">Doação</a>
+                        <a class="footer-link" href="#contato">Contato</a>
+                    </div>
+                    <div class="col-md-3">
+
+
+                        <div class="footer-title">Links úteis</div>
+                        <!--                <a class="footer-link" href="#">Política de privacidade</a>-->
+                        <a class="footer-link" href="#">Política de privacidade</a>
+                        <a class="footer-link" href="#">Denúncias</a>
+                    </div>
+                    <div class="col-md-3">
+
+                        <p>Siga-nos em nossas redes sociais e fique por dentro de novidades.</p>
+                        <a href="https://wa.me/55" target="_blank"><img class="social" src="img/social/whatsapp.png" alt=""/></a>
+                        <a href="https://instagram.com/" target="_blank"><img class="social" src="img/social/instagram.jpg" alt=""/></a>
+                        <a href="https://facebook.com/" target="_blank"><img class="social" src="img/social/facebook.png" alt=""/></a>
+                        <a href="https://youtube.com/" target="_blank"><img class="social" src="img/social/youtube.png" alt=""/></a>
 
                     </div>
-                    <script src="js/jquery-3.7.1.min.js" type="text/javascript"></script>
-                    <script src="js/script.js" type="text/javascript"></script>
-                </center>
-            </section>
 
+                    <div class="col-md-3">
+                        <p>Deixe seu email e receba novidades sobre adoções, dicas e atualizações.</p>
+                        <form action="" method="post">
+                            <input type="hidden" name="form-contact" value="<?php echo $_SESSION['form-contact']=md5(time().rand(0,9).rand(0,9).rand(0,9).rand(0,9)); ?>">
+                            <input type="text" name="nome" value="" placeholder="Digite seu nome">
+                            <input type="email" name="email" value="" placeholder="Digite seu email, whatsapp ou contato">
+                            <button class="green">Enviar mensagem</button>
+                        </form>
+                    </div>
+
+                    <div class="br-60"></div>
+                    <div class="br-60"></div>
+
+                </div>
+            </div>
+
+
+            <div id="powered-by">
+                Desenvolvido do zero, com carinho, por <a href="https://flaviopavim.com.br/" target="_blank">Flávio Pavim</a> ❤️<br>
+                O site dos nossos bichinhos está protegido por <a href="https://whitehats.com.br/" target="_blank">WhiteHats!</a>
+            </div>
+
+        </footer>
+
+        <a id="up" href="#"></a>
+
+        <script src="js/jquery-3.7.1.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/script.js" type="text/javascript"></script>
+        <script src="js/scroll.js" type="text/javascript"></script>
     </body>
 </html>

@@ -1,0 +1,19 @@
+/* 
+    Created on : 28 de out. de 2023, 22:24:34
+    Author     : Flávio Pavim
+*/
+
+.justify {
+    text-align: justify;
+}
+
+.br-30 {
+    /*display: block;*/
+    clear: both;
+    height: 30px;
+}
+.br-60 {
+    /*display: block;*/
+    clear: both;
+    height: 30px;
+}

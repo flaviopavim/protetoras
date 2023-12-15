@@ -1,0 +1,304 @@
+/* 
+    Created on : 14 de dez. de 2023, 03:22:23
+    Author     : Flávio Pavim
+*/
+
+
+#logo {
+
+    position: relative;
+    
+    /*margin: 30px 0;*/
+    display: block;
+    width: 436px;
+    height: 436px;
+    /*background-color: #ccc;*/
+    
+    margin: 0 auto;
+    
+/*        text-align: center;
+    align-items: center;*/
+
+}
+#logo img {
+    position: absolute;
+}
+
+#rainbow {
+    top: 0;
+    left: 0;
+}
+
+
+#cat-head {
+    top: 210px;
+    left: 20px;
+}
+#cat-ear-left,
+#cat-ear-right {
+    top: 180px;
+}
+#cat-ear-left {
+    left: 28px;
+}
+#cat-ear-right {
+    left: 146px;
+}
+#cat-eye-left,
+#cat-eye-right {
+    top: 260px;
+}
+#cat-eye-left {
+    left: 70px;
+}
+#cat-eye-right {
+    left: 140px;
+}
+#cat-mouth {
+    top: 290px;
+    left: 65px;
+}
+#cat-noose {
+    top: 290px;
+    left: 100px;
+}
+#cat-mustache-left-1 {
+    top: 290px;
+    left: 45px;
+}
+#cat-mustache-left-2 {
+    top: 306px;
+    left: 42px;
+}
+#cat-mustache-left-3 {
+    top: 317px;
+    left: 43px;
+}
+#cat-mustache-right-1 {
+    top: 290px;
+    left: 144px;
+}
+#cat-mustache-right-2 {
+    top: 306px;
+    left: 147px;
+}
+#cat-mustache-right-3 {
+    top: 317px;
+    left: 144px;
+}
+
+
+
+
+#dog-head {
+    top: 200px;
+    left: 230px;
+}
+#dog-ear-left,
+#dog-ear-right {
+    top: 200px;
+}
+#dog-ear-left {
+    left: 210px;
+}
+#dog-ear-right {
+    left: 341px;
+}
+#dog-eye-left,
+#dog-eye-right {
+    top: 260px;
+}
+#dog-eye-left {
+    left: 290px;
+}
+#dog-eye-right {
+    left: 350px;
+}
+
+#dog-noose {
+    top: 295px;
+    left: 300px;
+}
+#dog-mouth-bg {
+    top: 315px;
+    left: 295px;
+}
+#dog-mouth {
+    top: 290px;
+    left: 253px;
+}
+
+
+
+
+
+
+
+
+
+@keyframes catEarMovement {
+    0% {
+        transform: rotate(-2deg);
+    }
+    50% {
+        transform: rotate(2deg);
+    }
+    100% {
+        transform: rotate(-2deg);
+    }
+}
+#cat-ear-left,
+#cat-ear-right {
+    animation: catEarMovement 2s infinite; /* Adjust the duration and iteration as needed */
+    transform-origin: bottom center; /* Set the transform origin to the bottom center for a more natural rotation effect */
+}
+/*#cat-ear-left {
+    left: 38px;
+}
+
+#cat-ear-right {
+    left: 156px;
+}*/
+
+
+
+
+
+@keyframes mustacheMovement {
+    0% {
+        transform: rotate(-1deg);
+    }
+    50% {
+        transform: rotate(1deg);
+    }
+    100% {
+        transform: rotate(-1deg);
+    }
+}
+#cat-mustache-left-1,
+#cat-mustache-left-2,
+#cat-mustache-left-3,
+#cat-mustache-right-1,
+#cat-mustache-right-2,
+#cat-mustache-right-3 {
+    animation: mustacheMovement 0.5s infinite; /* Adjust the duration and iteration as needed */
+    transform-origin: bottom center; /* Set the transform origin to the bottom center for a more natural rotation effect */
+}
+
+
+
+
+
+
+
+
+@keyframes dogLeftEarMovement {
+    0% {
+        top: 203px;
+        transform: rotate(-2deg);
+    }
+    50% {
+        top: 198px;
+        transform: rotate(2deg);
+    }
+    100% {
+        top: 203px;
+        transform: rotate(-2deg);
+    }
+}
+@keyframes dogRightEarMovement {
+    0% {
+        top: 198px;
+        transform: rotate(-2deg);
+    }
+    50% {
+        top: 203px;
+        transform: rotate(2deg);
+    }
+    100% {
+        top: 198px;
+        transform: rotate(-2deg);
+    }
+}
+#dog-ear-left {
+    animation: dogLeftEarMovement 3s infinite; /* Adjust the duration and iteration as needed */
+    transform-origin: bottom center; /* Set the transform origin to the bottom center for a more natural rotation effect */
+}
+#dog-ear-right {
+    animation: dogRightEarMovement 3s infinite; /* Adjust the duration and iteration as needed */
+    transform-origin: bottom center; /* Set the transform origin to the bottom center for a more natural rotation effect */
+}
+/*#dog-ear-left {
+    left: 210px;
+}
+
+#dog-ear-right {
+    left: 341px;
+}*/
+
+
+
+
+
+
+#bone {
+    top: 315px;
+    left: -60px;
+}
+
+#soon {
+    position: absolute;
+    top: 370px;
+    left: 80px;
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: 0;
+}
+
+
+/*@keyframes rainbowMovement {
+    0% {
+        width: 436px
+        left: 0;
+        top: 0;
+    }
+    50% {
+        width: 434px;
+        left: 1px;
+        top: 1px;
+    }
+    100% {
+        width: 436px
+        left: 0;
+        top: 0;
+    }
+}
+#rainbow {
+    animation: rainbowMovement 1.0s infinite;
+}*/
+
+
+
+
+
+@keyframes boneMovement {
+    0% {
+        transform: rotate(-0.2deg);
+    }
+    50% {
+        transform: rotate(0.2deg);
+    }
+    100% {
+        transform: rotate(-0.2deg);
+    }
+}
+#bone {
+    animation: boneMovement 4.3s infinite; /* Adjust the duration and iteration as needed */
+    transform-origin: bottom center; /* Set the transform origin to the bottom center for a more natural rotation effect */
+}
+#soon {
+    animation: boneMovement 1.0s infinite; /* Adjust the duration and iteration as needed */
+    transform-origin: bottom center; /* Set the transform origin to the bottom center for a more natural rotation effect */
+}

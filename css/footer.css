@@ -1,0 +1,77 @@
+/* 
+    Created on : 29 de out. de 2023, 01:14:35
+    Author     : Flávio Pavim
+*/
+
+footer {
+    display: table;
+    width: 100%;
+    background-color: #222;
+    color: #fff;
+    /*background-image: url('../img/bg.png');*/
+    padding-top: 60px;
+}
+footer img {
+    display: inline-block;
+    width: 40px;
+    margin: 5px;
+}
+
+.footer-title,
+.footer-link {
+    display: table;
+    /*width: 100%;*/
+    padding: 8px 0;
+    /*color: #662;*/
+    color: #fff;
+    width: auto;
+}
+.footer-title {
+    /*width: auto;*/
+    /*border-bottom: 3px #d66 solid;*/
+    border-bottom: 3px #555 solid;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+.footer-link {
+    /*width: 100%;*/
+}
+/*.footer-title:first-child {
+    border-bottom: 3px #da3333 solid;
+    
+}*/
+.footer-link:hover {
+    font-weight: 600;
+}
+
+
+
+#powered-by {
+    display: table;
+    width: 100%;
+
+    /*line-height: 25px;*/
+    /*height: 120px;*/
+    background-color: #ffffff;
+    text-align: center;
+    /*box-sizing: border-box;*/
+    padding: 20px;
+    
+    font-size: 18px;
+
+    /*background-image: url('../img/bg.png');*/
+
+}
+@media (max-width: 767px) {
+    #powered-by {
+        font-size: 15px;
+    }
+}
+#powered-by,
+#powered-by a,
+#powered-by a:hover {
+    color: #999;
+}
+#powered-by a {
+    font-weight: 700;
+}

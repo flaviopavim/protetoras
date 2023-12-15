@@ -1,17 +1,41 @@
 function adjust() {
 //    if ($(window).height() > $('#logo').height()) {
         $('#logo').css({
-            marginTop: (($(window).height() / 2) - ($('#logo').height() / 2) - 50)
+            top: (($(window).height() / 2) - ($('#logo').height() / 2) - 50)
         });
+//        $('#inicio').css({
+//            paddingTop: (($(window).height() / 2) - ($('#logo').height() / 2) - 50)
+//        });
 //    } else {
 //        $('#logo').css({marginTop: 30});
 //    }
+
+    var minHeight=$(window).height();
+    if (minHeight<850) {
+        minHeight=850;
+    }
+
+    $('#inicio').height(minHeight);
+}
+
+function constrain(x,min,max) {
+    if (x<min) {
+        x=min;
+    }
+    if (x>max) {
+        x=max;
+    }
+    return x;
 }
 
 function map(x, in_min, in_max, out_min, out_max) {
     return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 }
 
+function mapConstrain(x, in_min, in_max, out_min, out_max) {
+    var y=map(x, in_min, in_max, out_min, out_max);
+    return constrain(y,out_min,out_max);
+}
 
 var blink_cat = false;
 var timer_cat = 2000;
@@ -64,35 +88,39 @@ $(document).ready(function () {
     }, 100);
 });
 
-function animate() {
-    var x = event.pageX;
-    var y = event.pageY;
+
+var lastx=0;
+var lasty=0;
+
+function animate(event) {
+    var x = lastx = event.pageX;
+    var y = lasty = event.pageY;
     $("#coordinates").text("X: " + x + ", Y: " + y);
 
-    var move = 15;
+    var move = 8;
 
     var w = $(window).width();
     var h = $(window).height();
 
-    $('#cat-eye-left').css({left: map(x, 0, w, 80 - move, 80 + move)});
-    $('#cat-eye-right').css({left: map(x, 0, w, 150 - move, 150 + move)});
-    $('#cat-eye-left').css({top: map(y, 0, h, 260 - move, 260 + move)});
-    $('#cat-eye-right').css({top: map(y, 0, h, 260 - move, 260 + move)});
+    $('#cat-eye-left').css({left: mapConstrain(x, 0, w, 70 - move, 70 + move)});
+    $('#cat-eye-right').css({left: mapConstrain(x, 0, w, 140 - move, 140 + move)});
+    $('#cat-eye-left').css({top: mapConstrain(y, 0, h, 260 - move, 260 + move)});
+    $('#cat-eye-right').css({top: mapConstrain(y, 0, h, 260 - move, 260 + move)});
 
-    $('#dog-eye-left').css({left: map(x, 0, w, 290 - move, 290 + move)});
-    $('#dog-eye-right').css({left: map(x, 0, w, 350 - move, 350 + move)});
-    $('#dog-eye-left').css({top: map(y, 0, h, 260 - move, 260 + move)});
-    $('#dog-eye-right').css({top: map(y, 0, h, 260 - move, 260 + move)});
+    $('#dog-eye-left').css({left: mapConstrain(x, 0, w, 290 - move, 290 + move)});
+    $('#dog-eye-right').css({left: mapConstrain(x, 0, w, 350 - move, 350 + move)});
+    $('#dog-eye-left').css({top: mapConstrain(y, 0, h, 260 - move, 260 + move)});
+    $('#dog-eye-right').css({top: mapConstrain(y, 0, h, 260 - move, 260 + move)});
 
 
 
 }
 $(document).mousemove(function (event) {
-    animate();
+    animate(event);
 });
 $(window).resize(function (event) {
     adjust();
-    animate();
+    animate(event);
 });
 
 function playAudio(str) {
@@ -120,10 +148,30 @@ function bark() {
     },100);
 }
 
-$(window).click(function(){
-    if (Math.round(Math.random())==0) {
-        meow();
-    } else {
-        bark();
+$(window).click(function(event){
+    
+    var y = event.pageY;
+    
+    if (y<1000) {
+        if (Math.round(Math.random())==0) {
+            meow();
+        } else {
+            bark();
+        }
     }
+    
+    
 });
+
+
+window.setInterval(function(){
+    if (lastx<1000) {
+        if (Math.floor(Math.random() * 10)==0) {
+            if (Math.round(Math.random())==0) {
+                meow();
+            } else {
+                bark();
+            }
+        }
+    }
+},1000);
