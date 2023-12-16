@@ -196,9 +196,10 @@ h1 {
     border: 0;
 
     aspect-ratio: 4/3;
-    background-size: 100%;
+    /*background-size: 100%;*/
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
 }
 
 
