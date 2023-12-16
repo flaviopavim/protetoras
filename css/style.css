@@ -17,11 +17,11 @@
 
 
 
-* {
+*,body,div,span {
     font-family: 'IndieFlower';
-    box-sizing: border-box;
     /*font-family: 'Raleway';*/
     font-size: 25px;
+    box-sizing: border-box;
 }
 
 .left {
@@ -114,28 +114,22 @@ nav a:hover {
 
 
 section {
-    display: block;
+    /*display: block;*/
+    display: table;
     width: 100%;
     /*height: 100%;*/
     /*height: 950px;*/
     /*padding: 50px;*/
 }
 
-section {
-    display: block;
-    width: 100%;
-    /*height: 100%;*/
-    height: 950px;
-    /*background-color: #eee;*/
+/*section {
     background-color: rgba(0,0,0,0.1);
 }
 
 
 section:nth-child(even) {
-    /*background-color: #ccc;*/
     background-color: rgba(0,0,0,0.2);
-
-}
+}*/
 
 
 #quem-somos {
