@@ -24,9 +24,15 @@
     font-size: 25px;
 }
 
+.left {
+    float: left;
+}
+
 h1 {
     margin: 0;
 }
+
+
 
 
 body {
@@ -182,6 +188,8 @@ h1 {
 
 
 
+
+
 .work {
     display: block;
 
@@ -198,3 +206,18 @@ select,
 option {
     color: #999;
 }
+
+
+.icons {
+    margin: 7px 5px 0 0;
+}
+
+
+
+#powered-by {
+    font-family: 'Arial';
+    font-size: 15px !important;
+    line-height: 25px;
+}
+
+
