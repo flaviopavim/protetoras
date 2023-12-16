@@ -1,7 +1,8 @@
 function adjust() {
 //    if ($(window).height() > $('#logo').height()) {
         $('#logo').css({
-            top: (($(window).height() / 2) - ($('#logo').height() / 2) - 90)
+//            top: (($(window).height() / 2) - ($('#logo').height() / 2) - 90)
+            top: (($(window).height() / 2) - ($('#logo').height() / 2) - 120)
         });
 //        $('#inicio').css({
 //            paddingTop: (($(window).height() / 2) - ($('#logo').height() / 2) - 50)
@@ -11,10 +12,10 @@ function adjust() {
 //    }
 
     var minHeight=$(window).height();
-    if (minHeight<850) {
-        minHeight=850;
-    }
-
+//    if (minHeight<850) {
+//        minHeight=850;
+//    }
+//
     $('#inicio').height(minHeight);
 }
 

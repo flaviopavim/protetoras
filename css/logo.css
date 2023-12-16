@@ -248,14 +248,15 @@
 
 #soon {
     position: absolute;
-    top: 370px;
+    top: 520px;
     left: 80px;
     font-size: 60px;
-    color: #fff;
+    color: #555;
     text-align: center;
     text-decoration: none;
     border: 0;
 }
+
 
 
 /*@keyframes rainbowMovement {
