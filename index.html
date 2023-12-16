@@ -33,6 +33,12 @@
         <link href="css/form.css" rel="stylesheet" type="text/css"/>
         <link href="css/footer.css" rel="stylesheet" type="text/css"/>
         <link href="css/default.css" rel="stylesheet" type="text/css"/>
+        <link href="css/br.css" rel="stylesheet" type="text/css"/>
+        <link href="css/pad.css" rel="stylesheet" type="text/css"/>
+
+        <link rel="icon" href="img/paw.png" type="image/x-icon">
+        <link rel="shortcut icon" href="img/paw.png" type="image/x-icon">
+
 
     </head>
     <body>
@@ -46,7 +52,7 @@
         <section id="inicio">
 
             <div id="logo">
-                
+
 
                 <img id="rainbow" src="img/bitmap_g48.png" alt=""/>
 
@@ -75,8 +81,8 @@
                 <img id="dog-noose" src="img/bitmap_path45.png" alt=""/>
                 <img id="dog-ear-left" src="img/bitmap_path33.png" alt=""/>
                 <img id="dog-ear-right" src="img/bitmap_path34.png" alt=""/>
-                
-                
+
+
                 <img id="associacao-a-1" src="img/texto/arte_path17.png" alt=""/>
                 <img id="associacao-s-1" src="img/texto/arte_path19.png" alt=""/>
                 <img id="associacao-s-2" src="img/texto/arte_path19.png" alt=""/>
@@ -89,7 +95,7 @@
                 <img id="associacao-a-3" src="img/texto/arte_path17.png" alt=""/>
                 <img id="associacao-til" src="img/texto/arte_path52.png" alt=""/>
                 <img id="associacao-o-2" src="img/texto/arte_path21.png" alt=""/>
-                
+
                 <img id="protetoras-p" src="img/texto/arte_path54.png" alt=""/>
                 <img id="protetoras-r-1" src="img/texto/arte_path55.png" alt=""/>
                 <img id="protetoras-o-1" src="img/texto/arte_path57.png" alt=""/>
@@ -102,38 +108,58 @@
                 <img id="protetoras-s" src="img/texto/arte_path64.png" alt=""/>
 
                 <div id="tres-lagoas">Três Lagoas MS</div>
-                
+
                 <!--<h1 id="soon">Em breve!!</h1>-->
 
             </div>
         </section>
         <section id="quem-somos">
             <div class="container">
-                <h1>Protetoras TL</h1>
+                <div class="br-60"></div>
+                <h1>Associação Protetoras Três Lagoas MS</h1>
+                <div class="br-30"></div>
 
-                A ASSOCIAÇÃO PROTETORAS TRÊS LAGOAS- APTL é uma entidade filantrópica que é mantida exclusivamente por doações, eventos e promoções realizadas pela entidade, não recebe verba pública e atua ativamente no atendimento veterinário, tratamento e recuperação de animais em situação de abandono e maus tratos resgatados e acolhidos pela população.
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <center>
+                            <span style="font-size: 35px; text-align: center;">
+                                APTL é uma entidade filantrópica que é mantida exclusivamente por doações, eventos e promoções realizadas pela entidade, não recebe verba pública e atua ativamente no atendimento veterinário, tratamento e recuperação de animais em situação de abandono e maus tratos resgatados e acolhidos pela população.
+                            </span>
+
+                            <div class="br-30"></div>
+
+                            <img width="400" src="img/logo.png">
+                            <div class="br-30"></div>
+
+                        </center>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
             </div>
         </section>
         <section id="trabalhos">
             <div class="container">
+                <div class="br-60"></div>
                 <h1>Nossos trabalhos</h1>
+                <!--<div class="br-30"></div>-->
                 <div class="row">
                     <div class="col-md-4 trabalho">
                         <div id="image-1" class="img"></div>
-                        <img width="100%" src="img/doctor-pets.jpg" alt=""/>
+                        <img width="100%" class="work" style="background-image: url('img/doctor-pets.jpg');">
 
                         <div class="pad-30">
                             <center>
                                 <h2>Adoção</h2>
 
                                 <p>Adotar é a parte mais importante de todo nosso trabalho.</p>
-                                <p>Ao adotar, você estará salvando uma vida indefesa</p>
                             </center>
                         </div>
                     </div>
                     <div class="col-md-4 trabalho">
                         <div id="image-2" class="img"></div>
-                        <img width="100%" src="img/doctor-dog.jpg" alt=""/>
+                        <img width="100%" class="work" style="background-image: url('img/doctor-dog.jpg');">
+                        <!--<img width="100%" src="img/doctor-dog.jpg" alt=""/>-->
                         <div class="pad-30">
                             <center>
                                 <h2>Resgate</h2>
@@ -144,7 +170,8 @@
                     </div>
                     <div class="col-md-4 trabalho">
                         <div id="image-3" class="img"></div>
-                        <img width="100%" src="img/doctor-cat.png" alt=""/>
+                        <img width="100%" class="work" style="background-image: url('img/doctor-cat.png');">
+                        <!--<img width="100%" src="img/doctor-cat.png" alt=""/>-->
                         <div class="pad-30">
                             <center>
                                 <h2>Medicação</h2>
@@ -158,55 +185,78 @@
         </section>
         <section id="doacao">
             <div class="container">
-                
+                <div class="br-60"></div>
                 <h1>Doação</h1>
-                
-                <p>Somos uma organização sem fins lucrativos. </p>
-                <p>Toda doação recebida é direcionada aos serviços de caridade com nossos bichinhos.</p>
-                <p>Sua cooperação é muito importante!</p>
-                <p>Você pode fazer doação de qualquer valor ou ajudar de alguma forma.</p>
 
+                <div class="row">
+                    <div class="col-md-5">
 
-                <form action="" method="post">
-                    <input type="hidden" name="form-contact" value="<?php echo $_SESSION['form-contact']=md5(time().rand(0,9).rand(0,9).rand(0,9).rand(0,9)); ?>">
-                    <input type="text" name="nome" value="" placeholder="Digite seu nome se quiser se identificar">
-                    <select>
-                        <option>Selecione um tipo de doação</option>
-                        <option>PIX</option>
-                        <option>Depósito</option>
-                    </select>
-                    <input id="donation" type="text" name="donation" value="" placeholder="Valor da doação ex: R$ 50,00">
-                    <button id="donate-button" class="green">Doar</button>
-                </form>
+                        <img class="img-responsive" src="img/donation.jpg">
 
+                    </div>
+                    <div class="col-md-7">
+                        <div class="br-30"></div>
+                        <p>Somos uma organização sem fins lucrativos. </p>
+                        <p>Toda doação recebida é direcionada aos serviços de caridade com nossos bichinhos.</p>
+                        <p>Sua cooperação é muito importante!</p>
+                        <p>Você pode fazer doação de qualquer valor ou ajudar de alguma forma.</p>
+
+                        <div class="br-30"></div>
+                        <form action="" method="post">
+                            <input type="hidden" name="form-contact" value="<?php echo $_SESSION['form-contact']=md5(time().rand(0,9).rand(0,9).rand(0,9).rand(0,9)); ?>">
+                            <input type="text" name="nome" value="" placeholder="Digite seu nome se quiser se identificar">
+                            <select>
+                                <option>Selecione um tipo de doação</option>
+                                <option>PIX</option>
+                                <option>Depósito</option>
+                            </select>
+                            <input id="donation" type="text" name="donation" value="" placeholder="Valor da doação ex: R$ 50,00">
+                            <button id="donate-button" class="green">Doar</button>
+                        </form>
+
+                    </div>
+                </div>
             </div>
         </section>
         <section id="contato">
             <div class="container">
+                <div class="br-60"></div>
                 <h1>Contato</h1>
 
-                <p>Entre em contato com nossa equipe.</p>
-                <p>Deixe sua sugestão, busque por adoções, ou faça sua doação.</p>
-                <p>Sua interação é muito importante pra nós.</p>
+
+                <div class="row">
+                    <div class="col-md-6">
+
+                        <img class="img-responsive" style="width: 100%;" src="img/contact.jpeg">
+
+                    </div>
+                    <div class="col-md-6">
+                        <!--<div class="br-30"></div>-->
+
+                        <p>Entre em contato com nossa equipe.</p>
+                        <p>Deixe sua sugestão, busque por adoções, ou faça sua doação.</p>
+                        <p>Sua interação é muito importante pra nós.</p>
+
+                        <form action="" method="post">
+                            <input type="hidden" name="form-contact" value="<?php echo $_SESSION['form-contact']=md5(time().rand(0,9).rand(0,9).rand(0,9).rand(0,9)); ?>">
+                            <select>
+                                <option>Selecione um assunto</option>
+                                <option>Quero adotar</option>
+                                <option>Quero ajudar</option>
+                                <option>Doação</option>
+                                <option>Sugestões</option>
+                                <option>Denúncia</option>
+                                <option>Outro</option>
+                            </select>
+                            <input type="text" name="nome" value="" placeholder="Digite seu nome">
+                            <input type="email" name="email" value="" placeholder="Digite seu email, whatsapp ou contato">
+                            <textarea placeholder="Digite sua mensagem"></textarea>
+                            <button class="green">Enviar mensagem</button>
+                        </form>
+                    </div>
 
 
-
-                <form action="" method="post">
-                    <input type="hidden" name="form-contact" value="<?php echo $_SESSION['form-contact']=md5(time().rand(0,9).rand(0,9).rand(0,9).rand(0,9)); ?>">
-                    <select>
-                        <option>Selecione um assunto</option>
-                        <option>Quero adotar</option>
-                        <option>Quero ajudar</option>
-                        <option>Doação</option>
-                        <option>Sugestões</option>
-                        <option>Denúncia</option>
-                        <option>Outro</option>
-                    </select>
-                    <input type="text" name="nome" value="" placeholder="Digite seu nome">
-                    <input type="email" name="email" value="" placeholder="Digite seu email, whatsapp ou contato">
-                    <textarea placeholder="Digite sua mensagem"></textarea>
-                    <button class="green">Enviar mensagem</button>
-                </form>
+                </div>
             </div>
         </section>
         <footer>
@@ -226,7 +276,7 @@
 
 
                         <div class="footer-title">Links úteis</div>
-                                        <a class="footer-link" href="#">Política de privacidade</a>
+                        <a class="footer-link" href="#">Política de privacidade</a>
                         <a class="footer-link" href="#">Política de privacidade</a>
                         <a class="footer-link" href="#">Denúncias</a>
                     </div>

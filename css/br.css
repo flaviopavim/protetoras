@@ -1,0 +1,60 @@
+.br-1,
+.br-2,
+.br-3,
+.br-4,
+.br-5,
+.br-6,
+.br-7,
+.br-8,
+.br-9,
+.br-10,
+.br-11,
+.br-12,
+.br-13,
+.br-14,
+.br-15,
+.br-20,
+.br-30,
+.br-40,
+.br-50,
+.br-60,
+.br-70,
+.br-80,
+.br-90,
+.br-100,
+.br-200,
+.br-300,
+.br-400,
+.br-500,
+.br {
+    clear: both;
+}
+
+.br-1 { height: 1px; }
+.br-2 { height: 2px; }
+.br-3 { height: 3px; }
+.br-4 { height: 4px; }
+.br-5 { height: 5px; }
+.br-6 { height: 6px; }
+.br-7 { height: 7px; }
+.br-8 { height: 8px; }
+.br-9 { height: 9px; }
+.br-10 { height: 10px; }
+.br-11 { height: 11px; }
+.br-12 { height: 12px; }
+.br-13 { height: 13px; }
+.br-14 { height: 14px; }
+.br-15 { height: 15px; }
+.br-20 { height: 20px; }
+.br-30 { height: 30px; }
+.br-40 { height: 40px; }
+.br-50 { height: 50px; }
+.br-60 { height: 60px; }
+.br-70 { height: 70px; }
+.br-80 { height: 80px; }
+.br-90 { height: 90px; }
+.br-100 { height: 100px; }
+.br-200 { height: 200px; }
+.br-300 { height: 300px; }
+.br-400 { height: 400px; }
+.br-500 { height: 500px; }

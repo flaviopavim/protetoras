@@ -32,9 +32,9 @@ h1 {
 body {
     /*padding: 0;*/
     margin: 0;
-/*    position: relative;
-    top: 0;
-    left: 0;*/
+    /*    position: relative;
+        top: 0;
+        left: 0;*/
     font-family: 'Arial';
 
     /*background-color: rgba(255,255,255,0.8);*/
@@ -80,7 +80,7 @@ nav a {
     font-size: 30px;
     text-decoration: none !important;
     /*transition: padding-right 0.2s ease-in;  Adicionando a transição aqui */
-    
+
     border-radius: 0 5px 5px 0;
 }
 
@@ -128,7 +128,7 @@ section {
 section:nth-child(even) {
     /*background-color: #ccc;*/
     background-color: rgba(0,0,0,0.2);
-    
+
 }
 
 
@@ -160,21 +160,41 @@ h1 {
 #inicio {
     display: block;
     position: relative;
-/*    top: 0;
-    left: 0;*/
+    /*    top: 0;
+        left: 0;*/
     width: 100%;
-    
-/*    text-align: center;
-    align-items: center;*/
-    
+
+    /*    text-align: center;
+        align-items: center;*/
+
     /*height: 100%;*/
     /*background-color: #eee;*/
     /*background-color: rgba(0,0,0,0.1);*/
     background-color: transparent;
     z-index: 1;
-    
+
 }
 
 
 
 
+
+
+
+
+.work {
+    display: block;
+
+    border: 0;
+
+    aspect-ratio: 4/3;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+select,
+option {
+    color: #999;
+}

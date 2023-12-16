@@ -1,0 +1,60 @@
+.pad-1,
+.pad-2,
+.pad-3,
+.pad-4,
+.pad-5,
+.pad-6,
+.pad-7,
+.pad-8,
+.pad-9,
+.pad-10,
+.pad-11,
+.pad-12,
+.pad-13,
+.pad-14,
+.pad-15,
+.pad-20,
+.pad-30,
+.pad-40,
+.pad-50,
+.pad-60,
+.pad-70,
+.pad-80,
+.pad-90,
+.pad-100,
+.pad-200,
+.pad-300,
+.pad-400,
+.pad-500,
+.pad {
+    clear: both;
+}
+
+.pad-1 { padding: 1px; }
+.pad-2 { padding: 2px; }
+.pad-3 { padding: 3px; }
+.pad-4 { padding: 4px; }
+.pad-5 { padding: 5px; }
+.pad-6 { padding: 6px; }
+.pad-7 { padding: 7px; }
+.pad-8 { padding: 8px; }
+.pad-9 { padding: 9px; }
+.pad-10 { padding: 10px; }
+.pad-11 { padding: 11px; }
+.pad-12 { padding: 12px; }
+.pad-13 { padding: 13px; }
+.pad-14 { padding: 14px; }
+.pad-15 { padding: 15px; }
+.pad-20 { padding: 20px; }
+.pad-30 { padding: 30px; }
+.pad-40 { padding: 40px; }
+.pad-50 { padding: 50px; }
+.pad-60 { padding: 60px; }
+.pad-70 { padding: 70px; }
+.pad-80 { padding: 80px; }
+.pad-90 { padding: 90px; }
+.pad-100 { padding: 100px; }
+.pad-200 { padding: 200px; }
+.pad-300 { padding: 300px; }
+.pad-400 { padding: 400px; }
+.pad-500 { padding: 500px; }
